@@ -1,0 +1,7 @@
+{% for key, value in users.iteritems() %}
+{{ key }}
+{{ value.name }}
+{% if key|string() == ansible_hostname|string() %}
+    {{ value.name }} ------- {{ value.telephone }}
+{% endif %}
+{% endfor %}

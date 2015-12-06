@@ -1,0 +1,10 @@
+{% for host, features in hosts.iteritems() %}
+{% if host|string() == ansible_hostname|string() %}
+
+{% for feature in features %}
+# {{ feature.name }}
+export {{ feature.name }}={{ feature.setting }}
+
+{% endfor %}
+{% endif %}
+{% endfor %}

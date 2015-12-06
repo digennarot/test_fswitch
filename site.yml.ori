@@ -1,0 +1,14 @@
+---
+- name: Template Test For Route File
+  hosts: all
+  vars:
+    users:
+      alice:
+        name: Alice Appleworth
+        telephone: 123-456-7890
+      server1:
+        name: "{{ ansible_hostname }}"
+        telephone: 987-654-3210
+
+  tasks:
+    - template: src=template/t.j2 dest=/tmp/templated

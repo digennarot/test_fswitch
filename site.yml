@@ -1,0 +1,8 @@
+---
+- name: Template Test For Route File
+  hosts: all
+  vars_files: 
+    - prova.yml
+
+  tasks:
+    - template: src=template/t.j2 dest=/tmp/templated
