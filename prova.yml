@@ -10,9 +10,4 @@ hosts:
       setting: 'yes'
     - name: "{{ ansible_hostname }}_2"
       setting: 'no'
-  server3:
-    - name: "{{ ansible_hostname }}_1"
-      setting: 'yes'
-    - name: "{{ ansible_hostname }}_2"
-      setting: 'no'
 
