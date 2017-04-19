@@ -15,4 +15,15 @@ hosts:
       setting: 'yes'
     - name: "{{ ansible_hostname }}_2"
       setting: 'no'
+  server4:
+    - name: "{{ ansible_hostname }}_1"
+      setting: 'yes'
+    - name: "{{ ansible_hostname }}_2"
+      setting: 'no'
+  server5:
+    - name: "{{ ansible_hostname }}_1"
+      setting: 'yes'
+    - name: "{{ ansible_hostname }}_2"
+      setting: 'no'
+
 
